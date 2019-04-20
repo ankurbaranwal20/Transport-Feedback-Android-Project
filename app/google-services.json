@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "761112062564",
+    "firebase_url": "https://feedback-adcae.firebaseio.com",
+    "project_id": "feedback-adcae",
+    "storage_bucket": "feedback-adcae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761112062564:android:dda3c002c68de94e",
+        "android_client_info": {
+          "package_name": "com.example.ankurbaranwal.feedback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761112062564-380qbpmin5m0cidkni1a0o2f5lf5d8pm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ankurbaranwal.feedback",
+            "certificate_hash": "97560f69b837ae8a3af425a1bf264987a42831e9"
+          }
+        },
+        {
+          "client_id": "761112062564-5vj8n53nmu7hm9463ih0glu1r48p9v4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ankurbaranwal.feedback",
+            "certificate_hash": "5ed29a07cbe8b721afa8105ea6372d1741e551a4"
+          }
+        },
+        {
+          "client_id": "761112062564-vap45do73g4pqafnc26ldpj2r16c5a1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu8mwy2bQvpXHGfnjfXpQcnfT7b7nt2CU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761112062564-vap45do73g4pqafnc26ldpj2r16c5a1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

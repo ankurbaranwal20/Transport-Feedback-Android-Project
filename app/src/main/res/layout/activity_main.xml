@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/select_product_image"
+            android:layout_width="240dp"
+            android:layout_height="202dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:cropToPadding="false"
+            android:src="@drawable/ic_image_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_design"
+            android:hint="Subject"
+            android:imeOptions="actionNext"
+
+            android:maxLines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:hint="Locality"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <ImageView
+                android:id="@+id/locate"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_my_location_black_24dp" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/input_design"
+            android:hint="Feedback"
+            android:imeOptions="actionDone"
+            android:maxLines="5"
+            android:padding="15dp"
+            android:singleLine="false"
+
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="209dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044775629101422/6336457575"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.493"
+        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+</android.support.constraint.ConstraintLayout>
