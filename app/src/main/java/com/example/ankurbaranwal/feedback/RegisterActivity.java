@@ -58,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if(firebaseAuth.getCurrentUser()!=null){
 
-                    Intent intent=new Intent(RegisterActivity.this,MainActivity.class);
+                    Intent intent=new Intent(RegisterActivity.this,HomeActivity.class);
                     startActivity(intent);
                     finish();
                 }
@@ -156,7 +156,7 @@ public class RegisterActivity extends AppCompatActivity {
                     loadingbar.dismiss();
                     //Toast.makeText(RegisterActivity.this,"Please try again using another phone number.",Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
+                    Intent intent = new Intent(RegisterActivity.this,HomeActivity.class);
                     startActivity(intent);
                 }
             }
@@ -245,7 +245,7 @@ public class RegisterActivity extends AppCompatActivity {
                             mAuth.getUid();
                             loadingbar.dismiss();
                             Toast.makeText(RegisterActivity.this, "Login Successfully...", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                            Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 
