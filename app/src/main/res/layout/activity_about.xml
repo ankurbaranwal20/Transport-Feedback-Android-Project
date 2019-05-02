@@ -6,6 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".About">
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Apni Sadak is a mobile app to enable users to give their feedback regarding pace of works, quality of works etc. of PMGSY roads to the Nodal Departments in the State Governments / National Rural Roads Development Agency (NRRDA). The user can take photographs at the site and submit along with feedback.
+
+After submission of feedback, the user can monitor the redressal of his / her feedback through this app. The respective State Quality Coordinators (SQCs) of the Nodal Department implementing PMGSY will provide an interim response to the user.
+
+It is hoped that this application will make the system of implementation of PMGSY more transparent and accountable to the benefit of all."/>
+    </android.support.v7.widget.CardView>
+
+
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adview"
         android:layout_width="wrap_content"

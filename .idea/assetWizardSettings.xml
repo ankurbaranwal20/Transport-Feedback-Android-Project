@@ -64,7 +64,7 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="f8fff9" />
-                                      <entry key="foregroundImage" value="C:\Users\Ankur baranwal\Desktop\feed1.png" />
+                                      <entry key="foregroundImage" value="C:\Users\Ankur baranwal\Desktop\e331637d-570c-458d-ad5a-a086c425b67d.jpg" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -137,7 +137,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Android/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_all_out_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Android/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_tag_faces_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -147,7 +147,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_all_out_black_24dp" />
+                            <entry key="outputName" value="ic_tag_faces_black_24dp" />
                             <entry key="sourceFile" value="C:\Users\Ankur baranwal" />
                           </map>
                         </option>

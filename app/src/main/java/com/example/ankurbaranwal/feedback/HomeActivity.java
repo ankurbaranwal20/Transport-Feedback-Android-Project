@@ -99,7 +99,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if (v.getId() == R.id.card_view1)
         {
-            startActivity(new Intent(HomeActivity.this,MainActivity.class));
+            startActivity(new Intent(HomeActivity.this,OurWork.class));
         }
         else if(v.getId()== R.id.card_view2)
         {
