@@ -27,8 +27,10 @@ import android.widget.Toast;
 
 import com.example.ankurbaranwal.feedback.Model.People;
 import com.example.ankurbaranwal.feedback.Model.User;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationListener;
@@ -71,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
     private StorageReference storageReference;
 
     AdView adView;
+    InterstitialAd interstitialAd;
 
     private FusedLocationProviderClient fusedLocationProviderClient;
 
@@ -83,6 +86,18 @@ public class MainActivity extends AppCompatActivity {
         adView =(AdView)findViewById(R.id.adview);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
+
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId("ca-app-pub-9044775629101422/9209158189");
+        AdRequest request = new AdRequest.Builder().build();
+        interstitialAd.loadAd(request);
+        interstitialAd.setAdListener(new AdListener(){
+            public void onAdLoaded(){
+                if (interstitialAd.isLoaded()) {
+                    interstitialAd.show();
+                }
+            }
+        });
 
         storageReference = FirebaseStorage.getInstance().getReference().child("People");
         ProductRef = FirebaseDatabase.getInstance().getReference().child("People");
@@ -289,7 +304,7 @@ public class MainActivity extends AppCompatActivity {
         final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setCancelable(false);
         builder.setTitle("Exit");
-        builder.setMessage("Are you sure want to leave?");
+        builder.setMessage("Are you sure want to go back?");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

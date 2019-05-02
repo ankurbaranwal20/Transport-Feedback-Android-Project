@@ -12,9 +12,11 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -45,6 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
     String codeSent;
     ProgressDialog loadingbar;
     AdView adView;
+    InterstitialAd interstitialAd;
 
     @Override
     public void onStart() {
@@ -78,6 +81,18 @@ public class RegisterActivity extends AppCompatActivity {
         adView =(AdView)findViewById(R.id.adview);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
+
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId("ca-app-pub-9044775629101422/9209158189");
+        AdRequest request = new AdRequest.Builder().build();
+        interstitialAd.loadAd(request);
+        interstitialAd.setAdListener(new AdListener(){
+            public void onAdLoaded(){
+                if (interstitialAd.isLoaded()) {
+                    interstitialAd.show();
+                }
+            }
+        });
 
 
         loadingbar = new ProgressDialog(this);
